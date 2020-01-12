@@ -174,8 +174,7 @@
 #define OFX_HEATMAP_DEFAULT_WIDTH 512
 #define OFX_HEATMAP_DEFAULT_HEIGHT 512
 
-class ofxHeatMap
-{
+class ofxHeatMap{
 public:
     ofxHeatMap()
     {
@@ -203,6 +202,7 @@ public:
         mStamp = mom.mStamp;
         mHeatMapImg = mom.mHeatMapImg;
         mRadius = mom.mRadius;
+        return *this;
     }
     
     ~ofxHeatMap()
